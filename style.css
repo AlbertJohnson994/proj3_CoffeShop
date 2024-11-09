@@ -1,0 +1,197 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f8f5f2;
+    color: #4d4d4d;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    transition: all 0.3s ease;
+}
+
+.navbar {
+    background-color: #6b4226;
+}
+
+.navbar-toggler {
+    background-color: white;
+    border-color: #fff;
+}
+
+.navbar-toggler-icon {
+    background-color: #fff;
+}
+
+.navbar-brand,
+#header .nav .nav-link {
+    color: white;
+}
+
+#header .nav .nav-link.active {
+    background-color: white;
+    color: #6b4226;
+}
+
+
+.section-title {
+    font-family: 'Pacifico', cursive;
+    font-size: 2rem;
+    color: #6b4226;
+}
+
+.text-highlight {
+    color: #d2691e;
+}
+
+
+#about-us,
+#gallery {
+    background-color: #fff;
+}
+
+#our-menu,
+#contact-us {
+    background-color: #f8f5f2;
+}
+
+
+.social-links {
+    display: flex;
+    list-style: none;
+    padding: 0;
+}
+
+.social-links li {
+    list-style: none;
+    display: inline;
+}
+
+.social-links a {
+    text-decoration: none;
+    color: #6b4226;
+    transition: color 0.3s;
+}
+
+.social-links a:hover {
+    color: #d2691e;
+}
+
+
+.btn-dark {
+    background-color: #6b4226;
+    border: none;
+}
+
+.btn-dark:hover {
+    background-color: #d2691e;
+}
+
+
+.menu-image {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 200px; 
+    border-radius: 10px;
+}
+
+
+.carousel-image {
+    max-height: 400px; 
+    object-fit: cover; 
+    margin: 0 auto; 
+    display: block; 
+}
+
+.carousel-inner img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+
+#about-us {
+    padding-top: 3rem; 
+}
+
+
+form .form-control {
+    border-radius: 5px;
+    border-color: #ddd;
+}
+
+.btn-dark {
+    background-color: #4CAF50;
+    border: none;
+}
+
+.btn-dark:hover {
+    background-color: #333;
+}
+
+
+@media (max-width: 992px) {
+    .nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-pills .nav-link {
+        margin-bottom: 5px;
+    }
+}
+
+@media (max-width: 768px) {
+    .section-title {
+        font-size: 1.5rem;
+    }
+
+    section {
+        padding: 40px 20px;
+    }
+
+    .carousel-inner img {
+        max-height: 300px;
+        object-fit: cover;
+    }
+
+    .social-links {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 576px) {
+    header {
+        text-align: center;
+    }
+
+    .navbar-brand {
+        font-size: 1.2rem;
+    }
+
+    .carousel-inner img {
+        max-height: 250px;
+        object-fit: cover;
+    }
+
+    .form-control {
+        font-size: 0.9rem;
+    }
+
+    .btn-dark {
+        font-size: 0.9rem;
+    }
+
+    .section-title {
+        font-size: 1.2rem;
+    }
+}
